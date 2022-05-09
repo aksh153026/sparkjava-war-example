@@ -7,7 +7,7 @@ pipeline
 		git 'Default'
 	//	nodejs 'NodeJS'
 		maven 'MAVEN_HOME' 
-		jdk 'jdk1.8' 
+		jdk 'java' 
 	}
 	stages 
 	{
