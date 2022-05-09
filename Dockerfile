@@ -1,6 +1,5 @@
 FROM tomcat:9 AS build
 RUN apt install openjdk-8-jdk -y
-RUN apt install ca-certificates curl gnupg lsb-release -y
 RUN apt install maven wget unzip -y
 RUN mkdir -p /workspace
 WORKDIR /workspace
