@@ -11,17 +11,13 @@ pipeline
 	}
 	stages 
 	{
-		
-		stage('Checkout SCM') 
-		{
-			steps 
-			{
-  
+	stage('Checkout SCM') 
+	{
+        steps
+        {
         sh "mvn install"
-				sh "pwd"
+	sh "pwd"
       }
     }
   }
-  
-	
 }
