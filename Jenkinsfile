@@ -16,7 +16,7 @@ pipeline
         steps
         {
         sh "mvn install"
-	sh "pwd"
+	sh "cp -p $(pwr)/target/sparkjava-hello-world-1.0.war /var/lib/tomcat9/webapps/"
       }
     }
   }
