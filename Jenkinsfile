@@ -9,9 +9,14 @@ pipeline
 		maven 'MAVEN_HOME' 
 		jdk 'jdk1.8' 
 	}
-  stages{
-    stage('built'){
-      step{
+	stages 
+	{
+		
+		stage('Checkout SCM') 
+		{
+			steps 
+			{
+  
         sh "mvn install"
       }
     }
