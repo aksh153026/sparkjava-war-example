@@ -10,7 +10,7 @@ pipeline
 		jdk 'jdk1.8' 
 	}
   stages{
-    stage("built"){
+    stage('built'){
       step{
         sh "mvn install"
       }
