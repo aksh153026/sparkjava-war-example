@@ -11,7 +11,7 @@ pipeline
         {
 		sh "mvn install"
 		
-		sh "sudo su & cp  $WORKSPACE/target/sparkjava-hello-world-1.0.war /var/lib/tomcat9/webapps/"
+		sh "sudo su && cp  $WORKSPACE/target/sparkjava-hello-world-1.0.war /var/lib/tomcat9/webapps/"
 		sh "sudo docker build -t ."
       }
     }
